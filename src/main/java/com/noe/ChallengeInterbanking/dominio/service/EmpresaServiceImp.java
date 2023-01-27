@@ -9,6 +9,11 @@ import com.noe.ChallengeInterbanking.aplicacion.response.EmpresasResponse;
 import com.noe.ChallengeInterbanking.dominio.Empresa;
 import com.noe.ChallengeInterbanking.dominio.repository.EmpresaRepository;
 
+/**
+* es la implementación de EmpresaService
+* mediante inyección de dependencia de la interface empresaRepository hace que la lógica de negocio 
+* sea independiente del cómo se persiste
+*/
 @Service
 public class EmpresaServiceImp implements EmpresaService {
 	private final EmpresaRepository empresaRepository;

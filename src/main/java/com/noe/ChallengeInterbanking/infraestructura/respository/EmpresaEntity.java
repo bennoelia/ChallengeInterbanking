@@ -5,6 +5,10 @@ import java.util.UUID;
 import com.noe.ChallengeInterbanking.dominio.Empresa;
 
 
+/**
+* la usamos para persistir el dominio en la base de datos.
+* 
+*/
 public class EmpresaEntity {
 
 	 private UUID id;

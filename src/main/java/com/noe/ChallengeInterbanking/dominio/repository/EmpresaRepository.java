@@ -4,7 +4,9 @@ import java.util.List;
 
 import com.noe.ChallengeInterbanking.dominio.Empresa;
 
-
+/**
+*interface que la lógica de negocio independiente del como se implementará la persistencia
+*/
 public interface EmpresaRepository {
 	
     void save(Empresa empresa);

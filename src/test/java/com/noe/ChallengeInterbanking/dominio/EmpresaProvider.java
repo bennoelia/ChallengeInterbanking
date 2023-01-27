@@ -11,6 +11,6 @@ public class EmpresaProvider {
         Calendar calendar = Calendar.getInstance();
         Date dateObj = calendar.getTime();
         String fechaAdhesion = dtf.format(dateObj);	
-		return new Empresa(UUID.randomUUID(), "27301650947", "empresaPrueba",fechaAdhesion );
+		return new Empresa(UUID.randomUUID(), "27301650947", "empresa Adherida el mes actual",fechaAdhesion );
 	}
 }

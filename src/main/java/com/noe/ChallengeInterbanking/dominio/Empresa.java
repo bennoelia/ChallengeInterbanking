@@ -2,6 +2,10 @@ package com.noe.ChallengeInterbanking.dominio;
 
 import java.util.UUID;
 
+/**
+* clase central dentro de la lógica del negocio
+* 
+*/
 public class Empresa {
 	private UUID id;
 	private String cuit;

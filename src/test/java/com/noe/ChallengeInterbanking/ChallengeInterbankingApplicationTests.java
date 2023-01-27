@@ -16,6 +16,14 @@ import com.noe.ChallengeInterbanking.dominio.Empresa;
 import com.noe.ChallengeInterbanking.dominio.EmpresaProvider;
 import com.noe.ChallengeInterbanking.infraestructura.respository.JdbcEmpresaRepository;
 
+/**
+*  clase para prueba global de la aplicación, la idea es que todas las empresas
+*  se encuentren dadas de alta con anterioridad al mes actual.
+*  y sólo 2 empresas poseen transferencias realizadas este mes. Por tal motivo se incluyó 
+*  la fecha de transferencia como dato importante dentro del dominio del problema 
+* 
+*/
+
 @SpringBootTest
 class ChallengeInterbankingApplicationTests {
 

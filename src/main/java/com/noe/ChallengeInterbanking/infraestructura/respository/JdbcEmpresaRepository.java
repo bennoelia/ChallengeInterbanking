@@ -3,7 +3,6 @@ package com.noe.ChallengeInterbanking.infraestructura.respository;
 import java.time.LocalDate;
 import java.util.List;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,8 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 import com.noe.ChallengeInterbanking.dominio.Empresa;
 import com.noe.ChallengeInterbanking.dominio.repository.EmpresaRepository;
 
+/**
+* clase que implementa EmpresaRepository desde la capa de dominio
+* si tuvieramos más de una implementación con la notación Primary podemos denotar cual se debe tomar
+*/
 @Repository
-@Primary
 public class JdbcEmpresaRepository  implements EmpresaRepository {
 
 	private JdbcTemplate plantilla;

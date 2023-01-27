@@ -1,6 +1,5 @@
 package com.noe.ChallengeInterbanking.aplicacion.request;
 
-import java.util.Date;
 import java.util.UUID;
 
 import javax.validation.constraints.NotNull;
