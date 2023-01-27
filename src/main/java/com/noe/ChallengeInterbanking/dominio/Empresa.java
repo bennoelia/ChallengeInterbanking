@@ -1,37 +1,28 @@
 package com.noe.ChallengeInterbanking.dominio;
 
-import java.util.Date;
 import java.util.UUID;
 
 public class Empresa {
 	private UUID id;
 	private String cuit;
 	private String razonSocial;
-	private Date fechaAdhesion;
-	private EmpresaStatus status;
+	private String fechaAdhesion;
+		
 	
-	
-	public Empresa(final UUID id,final String cuit,final String razonSocial,final Date fechaAdhesion) {
+	public Empresa(final UUID id,final String cuit,final String razonSocial,final String fechaAdhesion) {
 		this.id=id;
 		this.cuit=cuit;
 		this.razonSocial=razonSocial;
-		this.fechaAdhesion=fechaAdhesion;
-		this.status = EmpresaStatus.CREATED;
+		this.fechaAdhesion=fechaAdhesion;		
 	}
 	
 		
 	
-	public void complete() {
-        validateState();
-        this.status = EmpresaStatus.COMPLETED;
-    }
-	
-	private void validateState() {
-	        if (EmpresaStatus.COMPLETED.equals(status)) {
-	            throw new RuntimeException("The order is in completed state.");
-	        	
-	        }
+	public Empresa() {
+
 	}
+
+
 
 	public UUID getId() {
 		return id;
@@ -43,7 +34,47 @@ public class Empresa {
 	}
 
 
-	public EmpresaStatus getStatus() {
-		return status;
+	
+
+
+
+	public String getCuit() {
+		return cuit;
 	}
+
+
+
+	public void setCuit(String cuit) {
+		this.cuit = cuit;
+	}
+
+
+
+	public String getRazonSocial() {
+		return razonSocial;
+	}
+
+
+
+	public void setRazonSocial(String razonSocial) {
+		this.razonSocial = razonSocial;
+	}
+
+
+
+	public String getFechaAdhesion() {
+		return fechaAdhesion;
+	}
+
+
+
+	public void setFechaAdhesion(String fechaAdhesion) {
+		this.fechaAdhesion = fechaAdhesion;
+	}
+
+
+
+	
+	
+	
 }

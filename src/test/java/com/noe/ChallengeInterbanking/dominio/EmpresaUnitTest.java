@@ -9,8 +9,7 @@ public class EmpresaUnitTest {
 	@Test
     void shouldCompleteEmpresa() {
         final Empresa empresa = EmpresaProvider.getCreatedEmpresa();
-        //empresa.complete();
-        assertEquals(EmpresaStatus.CREATED, empresa.getStatus());
+        assertEquals("26-09-2022", empresa.getFechaAdhesion());
     }
 
 	
