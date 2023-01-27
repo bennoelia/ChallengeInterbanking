@@ -4,9 +4,7 @@ Para Validar este proyecto siga estos pasos por favor:
 
 1-Importe la base Mysql mediante la ejecución de las sentencias en /resources. username=root y pass=123456	
 
-2-Probar los test unitarios:
-  EmpresaUnitTest
-  EmpresaServiceUnitTest
+2-Probar los test unitarios EmpresaUnitTest y EmpresaServiceUnitTest
 
 3-Correr el test de la aplicación ChallengeInterbankingApplicationTests
 
